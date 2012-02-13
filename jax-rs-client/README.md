@@ -10,11 +10,12 @@ in *JBoss AS 7*.  Specifically, this client "calls" the HelloWorld JAX-RS
 Web Service created in quickstart helloworld-rs.  Please refer to the helloworld-rs
 README.md for instructions on how to build and deploy helloworld-rs.
 
-Pre-requisite
+Prerequisites
 =============
 
-This example depends on quickstart #32 being built and deployed to AS7.
-Additionally, this example can be executed using Maven from the command line 
+Before running this quickstart, you must first build and deploy the helloworld-rs
+quickstart to your AS7 server as this quickstart depends on that deployment for
+its test.  Additionally, this example can be executed using Maven from the command line 
 or from Eclipse using JBoss Tools.
 
 To set up Maven or JBoss Tools in Eclipse, refer to the _Getting Started Guide_.
@@ -25,6 +26,7 @@ This example assumes that the following URLs are available based upon the
 HelloWorld REST application being deployed:
 
 http://localhost:8080/jboss-as-helloworld-rs/xml
+
 http://localhost:8080/jboss-as-helloworld-rs/json
 
 Execute the example by running 'mvn test'
